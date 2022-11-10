@@ -49,16 +49,19 @@ const App = () => {
       </button>
       <div className='container mx-auto flex flex-col lg:flex-row gap-x-16'>
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center text-center lg:text-left px-4 mb-6'>
-          <h1 className='text-5xl lg:text-6xl text-[#242323] font-bold dark:text-white mb-12'>
+        <div className='flex-1 flex flex-col justify-center text-center lg:items-start lg:text-left px-4 mb-6'>
+          <h1 className='text-5xl lg:text-6xl text-[#242323] font-bold dark:text-white mb-10'>
             Anytime,anywhere develop your skills
           </h1>
-          <p className='dark:text-white max-w-[620px] mx-auto lg:mx-0'>
+          <p className='dark:text-white max-w-[620px] mx-auto lg:mx-0 mb-10'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
             aperiam quo quae dicta obcaecati tempora reprehenderit fuga
             doloribus. Illum odio sint et possimus natus id in repellendus
             corporis sapiente molestias.
           </p>
+          <button className='bg-[#45b871] h-[62px] px-10 rounded-[5px] font-semibold text-white'>
+            All courses
+          </button>
         </div>
         {/* image */}
         <div className='flex-1'>
