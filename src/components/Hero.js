@@ -4,7 +4,6 @@ import LogoDark from '../assets/img/logo-dark.svg';
 import LogoWhite from '../assets/img/logo-white.svg';
 // import icons
 import { BsFillSunFill, BsMoonFill, BsCheck } from 'react-icons/bs';
-import { IoEnterOutline } from 'react-icons/io5';
 // import image
 import GirlImg from '../assets/img/girl.png';
 
@@ -40,61 +39,24 @@ const Hero = () => {
     }
   };
   return (
-    <section className='min-h-[740px] w-screen bg-hero dark:bg-none dark:bg-dark bg-cover bg-center bg-no-repeat overflow-hidden'>
+    <section className='min-h-[740px] w-full bg-hero dark:bg-none dark:bg-dark bg-cover bg-center bg-no-repeat overflow-hidden'>
       <div className='container mx-auto px-4 lg:px-0'>
         {/* header */}
         <header className='py-8 flex items-center justify-between'>
           <div className='flex items-center'>
             {/* logo */}
-            <div className='mr-16'>
+            <a href='#' className='mr-16'>
               {theme === 'light' ? (
                 <img src={LogoDark} alt='' />
               ) : (
                 <img src={LogoWhite} alt='' />
               )}
-            </div>
-            {/* nav */}
-            <nav className='hidden lg:flex gap-x-[40px] text-base dark:text-white'>
-              <a
-                className='hover:text-accent-hover transition tracking-[0.02em]'
-                href='#'
-              >
-                Solutions
-              </a>
-              <a
-                className='hover:text-accent-hover transition tracking-[0.02em]'
-                href='#'
-              >
-                Plans
-              </a>
-              <a
-                className='hover:text-accent-hover transition tracking-[0.02em]'
-                href='#'
-              >
-                About
-              </a>
-              <a
-                className='hover:text-accent-hover transition tracking-[0.02em]'
-                href='#'
-              >
-                Contact us
-              </a>
-            </nav>
+            </a>
           </div>
           {/* toolbar */}
           <div className='flex gap-x-8 items-center'>
             {/* log in & btn */}
-            <div className='hidden lg:flex gap-x-8'>
-              <a
-                href='#'
-                className='flex items-center gap-x-2 text-accent  hover:text-accent-hover transition'
-              >
-                <IoEnterOutline />
-                <span className='text-base'>Log in</span>
-              </a>
-              {/* btn */}
-              <button className='btn'>Discover our plans</button>
-            </div>
+            <div className='hidden lg:flex gap-x-8'></div>
             {/* light & dark btn */}
             <button
               onClick={handleThemeSwitch}
@@ -105,7 +67,7 @@ const Hero = () => {
           </div>
         </header>
         {/* text & image wrapper */}
-        <div className='flex flex-col items-center lg:flex-row min-h-[740px]'>
+        <div className='flex flex-col items-center lg:flex-row min-h-[740px] '>
           {/* text */}
           <div className='flex-1 flex flex-col justify-center items-start'>
             <h1 className='text-5xl text-primary font-bold mb-6 leading-[60px] dark:text-white'>
@@ -140,10 +102,8 @@ const Hero = () => {
             <button className='btn'>Discover our plans</button>
           </div>
           {/* image */}
-          <div className='self-end hidden lg:flex relative'>
+          <div className='self-end hidden lg:flex'>
             <img src={GirlImg} alt='' />
-            <div className='absolute right-24'>icon 1</div>
-            <div className='absolute right-0'>icon 2</div>
           </div>
         </div>
       </div>
