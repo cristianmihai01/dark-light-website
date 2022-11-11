@@ -6,4 +6,7 @@
   body {
     @apply font-primary text-lg;
   }
+  .btn {
+    @apply bg-accent text-white text-base h-[56px] px-11 rounded-lg hover:bg-accent-hover transition;
+  }
 }
