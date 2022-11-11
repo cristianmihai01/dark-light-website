@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 // import icons
 import { BsFillSunFill, BsMoonFill } from 'react-icons/bs';
+// import logo
+import Logo from '../assets/img/logo.svg';
 
 const Hero = () => {
   const [theme, setTheme] = useState('light');
@@ -33,7 +35,18 @@ const Hero = () => {
       localStorage.setItem('theme', 'light');
     }
   };
-  return <section>Hero</section>;
+  return (
+    <section className='h-screen w-screen bg-hero bg-cover bg-center bg-no-repeat'>
+      <div className='container mx-auto'>
+        <header>
+          {/* logo */}
+          <div>
+            <img src={Logo} alt='' />
+          </div>
+        </header>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
