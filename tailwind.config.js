@@ -27,7 +27,7 @@ module.exports = {
         grey: '#494455',
       },
       backgroundImage: {
-        heroLight: "url('/src/assets/img/bg.svg')",
+        heroLight: "url('/src/assets/img/bg-light.svg')",
         heroDark: "url('/src/assets/img/bg-dark.svg')",
       },
     },
