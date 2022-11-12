@@ -25,10 +25,10 @@ module.exports = {
           hover: '#5A26DF',
         },
         grey: '#494455',
-        dark: '#000000',
       },
       backgroundImage: {
-        hero: "url('/src/assets/img/bg.svg')",
+        heroLight: "url('/src/assets/img/bg.svg')",
+        heroDark: "url('/src/assets/img/bg-dark.svg')",
       },
     },
   },
